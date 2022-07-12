@@ -22,15 +22,15 @@ public:
     }
     ~RMB() {}
     friend ostream& operator<<(ostream& output, const RMB& m) {
-        output << m.yuan << "Ԫ" << m.jiao << "��" << m.fen << "��" << endl;
+        output << m.yuan << "Ôª" << m.jiao << "½Ç" << m.fen << "·Ö" << endl;
         return output;
     }
     friend istream& operator>>(istream& input, RMB& m) {
-        cout << "Ԫ��";
+        cout << "Ôª£º";
         input >> m.yuan;
-        cout << "�ǣ�";
+        cout << "½Ç£º";
         input >> m.jiao;
-        cout << "�֣�";
+        cout << "·Ö£º";
         input >> m.fen;
         return input;
     }
@@ -203,7 +203,7 @@ int main()
     } while (choice);
     return 0;
 }
-
+//哈哈哈
 
 
 
